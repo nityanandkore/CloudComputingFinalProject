@@ -1,5 +1,6 @@
 setup:
-	python3 -m venv ~/.CloudComputingFinalProject
+	python3 -m venv ~/.
+	
 
 install:
 	pip install --upgrade pip &&\
