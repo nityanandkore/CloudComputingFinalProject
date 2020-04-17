@@ -1,7 +1,7 @@
 #!/usr/bin/env python
-from flask import Flask, request, jsonify
-from flask.logging import create_logger
-import logging
+from flask import Flask #, request, jsonify
+#from flask.logging import create_logger
+#import logging
 #import pandas as pd
 #from sklearn.externals import joblib
 #from sklearn.preprocessing import StandardScaler
@@ -12,5 +12,5 @@ def home():
     return "Hey there!"
 
 if __name__ == '__main__':
-#    app.run(host='0.0.0.0', port=80, debug=True)
-    app.run(debug=True)
+#app.run(host='127.0.0.0', port=80, debug=True)
+ app.run(debug=True)
