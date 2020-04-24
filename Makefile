@@ -20,6 +20,6 @@ run-circleci-local:
 
 lint:
 	hadolint project/Dockerfile
-	pylint --disable=R,C,W1203,W1202 app.py
+	pylint --disable=R,C,W1203,W1202 application.py
 	#pylint --disable=R,C CloudComputingFinalProject.py
 all: install lint test
