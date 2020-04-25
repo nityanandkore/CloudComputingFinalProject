@@ -1,15 +1,18 @@
 version: 0.2
 
+env:
+  variables:
+      dockerpath: "nityanandkore/cloudcomputingfinalproject"
 phases:
  pre_build:
     commands:
       - echo Logging in to Docker Hub...
+      - docker login --user nityanandkore --password b5950a8f-3c0e-4b97-bcf2-f668284b5fbb
  build:
     commands:
       - echo Build started on `date`
       - echo Building the Docker image...
       - docker build --tag=cloudcomputingfinalproject .
-      - dockerpath="nityanandkore/cloudcomputingfinalproject"
       - docker image tag cloudcomputingfinalproject $dockerpath
   post_build:
     commands:
