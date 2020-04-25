@@ -13,14 +13,6 @@ phases:
       - echo Build started on `date`
       - echo Building the Docker image...
       - docker build --tag=cloudcomputingfinalproject .
-#      - docker tag cloudcomputingfinalproject "nityanandkore/cloudcomputingfinalproject"
-  post_build:
-    commands:
-      - echo Build completed on `date`
-      - echo Pushing the Docker image...
-#      - docker push "nityanandkore/cloudcomputingfinalproject" 
-      
-      
 #### Commands to push image to Docker #####
   #pre_build:
   #  commands:
