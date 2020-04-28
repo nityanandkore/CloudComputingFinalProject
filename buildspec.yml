@@ -4,6 +4,13 @@ env:
   variables:
       dockerpath: "nityanandkore/cloudcomputingfinalproject"
 phases:
+ install:
+  runtime-versions:
+    python : 3.7
+  commands:
+    - echo "Upgrade pip and Install packages"
+    - make install
+
  pre_build:
     commands:
       - echo Logging in to Docker Hub...
